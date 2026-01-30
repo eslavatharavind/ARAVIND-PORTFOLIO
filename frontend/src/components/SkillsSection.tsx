@@ -29,7 +29,7 @@ const SkillsSection = () => {
         { name: 'HTML', level: 95 },
         { name: 'CSS', level: 90 },
         { name: 'JavaScript', level: 85 },
-        { name: 'React js', level: 80 }
+
       ]
     },
     {
