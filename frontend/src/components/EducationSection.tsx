@@ -8,8 +8,8 @@ const EducationSection = () => {
       institution: 'Bharat Institute of Engineering and Technology',
       duration: '2021 - 2025',
       cgpa: '6.92',
-      status: 'Pursuing',
-      description: 'Focusing on core computer science subjects including Data Structures, Algorithms, AI/ML, and Full Stack Development.'
+      status: 'Completed',
+
     },
     {
       degree: 'Intermediate (Class XII)',
@@ -17,7 +17,7 @@ const EducationSection = () => {
       duration: '2019 - 2021',
       cgpa: '5.74',
       status: 'Completed',
-      description: 'Completed intermediate education with focus on Mathematics, Physics, and Chemistry, building a strong foundation for engineering studies.'
+
     },
     {
       degree: 'Secondary School Certificate (Class X)',
@@ -25,7 +25,6 @@ const EducationSection = () => {
       duration: '2019',
       cgpa: '8.3',
       status: 'Completed',
-      description: 'Completed secondary education with excellent academic performance, demonstrating strong analytical and problem-solving skills.'
     }
   ];
 

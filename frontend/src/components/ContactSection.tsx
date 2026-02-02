@@ -35,7 +35,7 @@ const ContactSection = () => {
           {/* Social Links Row */}
           <div className="flex flex-wrap justify-center gap-8">
             <a
-              href="https://www.linkedin.com/in/eslavath-aravind-9aa64a30a"
+              href="https://www.linkedin.com/in/aravind-eslavath-9aa64a30a"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 hover:text-white/80 transition-colors"

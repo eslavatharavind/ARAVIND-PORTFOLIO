@@ -41,25 +41,25 @@ const AboutSection = () => {
                     <li className="flex items-start gap-3">
                       <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
                       <span className="text-muted-foreground">
-                        Develop expertise in full-stack web development
+                        Interested in Full Stack Development and AI/ML
                       </span>
                     </li>
                     <li className="flex items-start gap-3">
                       <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
                       <span className="text-muted-foreground">
-                        Master AI/ML technologies and their applications
+                        Completed academic projects and internships in relevant technologies
                       </span>
                     </li>
                     <li className="flex items-start gap-3">
                       <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
                       <span className="text-muted-foreground">
-                        Contribute to innovative tech solutions
+                        Eager to learn, improve skills, and work on real-world applications
                       </span>
                     </li>
                     <li className="flex items-start gap-3">
                       <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
                       <span className="text-muted-foreground">
-                        Build a successful career in technology industry
+                        Looking for an opportunity to start a career in the technology industry
                       </span>
                     </li>
                   </ul>

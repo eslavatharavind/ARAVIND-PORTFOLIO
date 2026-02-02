@@ -28,21 +28,20 @@ const Header = () => {
     { id: 'education', label: 'Education' },
     { id: 'skills', label: 'Skills' },
     { id: 'projects', label: 'Projects' },
-    { id: 'resume', label: 'Resume' },
+    { id: 'experience', label: 'Experience' },
     { id: 'contact', label: 'Contact' },
   ];
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
           ? 'bg-background/95 backdrop-blur-md shadow-medium border-b border-border'
           : 'bg-transparent'
-      }`}
+        }`}
     >
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <div 
+          <div
             className="text-xl font-bold text-primary cursor-pointer"
             onClick={() => scrollToSection('hero')}
           >

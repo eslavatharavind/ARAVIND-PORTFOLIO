@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { Github, Eye, Bot, ExternalLink } from 'lucide-react';
+import { Github, Eye, Bot } from 'lucide-react';
 
 const ProjectsSection = () => {
   const projects = [
@@ -10,7 +10,7 @@ const ProjectsSection = () => {
       description:
         'A comprehensive attendance tracking system that automates student attendance using advanced facial recognition technology, featuring live capture and detailed reporting.',
       icon: Eye,
-      technologies: ['Python', 'OpenCV', 'Tkinter', 'NumPy', 'Pandas', 'SQLite'],
+      technologies: ['Python', 'OpenCV', 'Tkinter', 'NumPy', 'Pandas'],
       category: 'Machine Learning',
       status: 'Completed',
       codeUrl: 'https://github.com/eslavatharavind/Face-Recognition-Attendance-System',
@@ -26,7 +26,7 @@ const ProjectsSection = () => {
       description:
         'An AI-powered speaking partner app that supports real-time voice conversations using LLM-based language generation and realistic voice synthesis.',
       icon: Bot,
-      technologies: ['React.js', 'Python', 'Flask', 'Deepgram', 'ElevenLabs', 'Supabase'],
+      technologies: ['Python', 'Flask', 'Deepgram', 'ElevenLabs', 'Supabase'],
       category: 'Artificial Intelligence',
       status: 'Completed',
       codeUrl: 'https://github.com/eslavatharavind/VOCMATE-AI-TUTOR',
@@ -38,7 +38,7 @@ const ProjectsSection = () => {
       ],
     },
     {
-      title: 'EchoLearn AI - Universal Voice Tutor Agent',
+      title: 'EchoLearn AI - Voice Tutor Agent',
       description:
         'A comprehensive AI-powered voice tutor system that enables interactive learning from PDF and Jupyter documents using RAG and voice synthesis.',
       icon: Bot,
@@ -52,7 +52,6 @@ const ProjectsSection = () => {
         '/results/EchoLearner-AI (3).png',
         '/results/EchoLearner-AI (4).png'
       ],
-      demoUrl: 'https://github.com/eslavatharavind/EchoLearner-AI',
     },
     {
       title: 'Sign Language Detection System',
@@ -66,7 +65,6 @@ const ProjectsSection = () => {
       images: [
         '/results/Sign Language Detection.png'
       ],
-      demoUrl: 'https://github.com/eslavatharavind/Sign-Language-Detection',
     },
   ];
 
@@ -149,14 +147,6 @@ const ProjectsSection = () => {
                             <Button size="sm" className="shadow-soft px-6">
                               <Github className="mr-2 h-4 w-4" />
                               View Code
-                            </Button>
-                          </a>
-                        )}
-                        {project.demoUrl && (
-                          <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
-                            <Button size="sm" variant="outline" className="shadow-soft px-6">
-                              <ExternalLink className="mr-2 h-4 w-4" />
-                              View Project
                             </Button>
                           </a>
                         )}

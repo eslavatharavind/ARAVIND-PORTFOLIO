@@ -15,7 +15,10 @@ const authToken = process.env.TWILIO_AUTH_TOKEN;
 const twilioPhone = process.env.TWILIO_PHONE_NUMBER;
 const destPhone = process.env.DEST_PHONE_NUMBER;
 
-const client = twilio(accountSid, authToken);
+let client;
+if (accountSid && authToken) {
+  client = twilio(accountSid, authToken);
+}
 
 app.post('/send-sms', async (req, res) => {
   const { firstName, lastName, email, subject, message } = req.body;
@@ -24,6 +27,10 @@ app.post('/send-sms', async (req, res) => {
   }
   const smsBody = `New Contact Form:\nName: ${firstName} ${lastName || ''}\nEmail: ${email}\nSubject: ${subject || ''}\nMessage: ${message}`;
   try {
+    if (!client) {
+      console.warn('Twilio client not initialized. Check your environment variables.');
+      return res.status(503).json({ error: 'SMS service unavailable' });
+    }
     await client.messages.create({
       body: smsBody,
       from: twilioPhone,

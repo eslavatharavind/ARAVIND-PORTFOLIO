@@ -50,8 +50,7 @@ const SkillsSection = () => {
       color: 'bg-purple-500',
       skills: [
         { name: 'Supabase', level: 85 },
-        { name: 'MySQL', level: 85 },
-        { name: 'PostgreSQL', level: 80 },
+
         { name: 'GitHub', level: 90 },
         { name: 'Vercel', level: 85 },
         { name: 'Render', level: 80 }

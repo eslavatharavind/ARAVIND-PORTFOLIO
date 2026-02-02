@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, Download, ChevronDown } from 'lucide-react';
+import { Github, Linkedin, Mail, Eye, Download, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const HeroSection = () => {
@@ -10,7 +10,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center bg-gradient-hero relative overflow-hidden">
+    <section id="hero" className="min-h-screen flex items-center justify-center bg-gradient-hero relative overflow-hidden pt-20 lg:pt-0">
       {/* Background Decoration */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-primary-light/10 to-primary-glow/5"></div>
       <div className="absolute top-20 left-10 w-72 h-72 bg-primary-glow/10 rounded-full blur-3xl"></div>
@@ -21,33 +21,36 @@ const HeroSection = () => {
           {/* Content */}
           <div className="text-center lg:text-left space-y-8">
             <div className="space-y-4">
-              <h1 className="text-4xl lg:text-6xl font-bold text-white leading-tight">
+              <h1 className="text-4xl lg:text-6xl font-bold text-white leading-tight animate-fade-in-up opacity-0">
                 Hi, I'm{' '}
-                <span className="bg-gradient-to-r from-primary-glow to-white bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-primary-glow via-white to-primary-glow bg-[length:200%_auto] bg-clip-text text-transparent animate-text-shimmer">
                   Eslavath Aravind
                 </span>
               </h1>
-              <p className="text-xl lg:text-2xl text-white/90 font-medium">
+              <p className="text-xl lg:text-2xl text-white/90 font-medium animate-fade-in-up [animation-delay:200ms] opacity-0">
                 AI Full Stack Developer /AI/ML Engineer & CSE Student
               </p>
-              <p className="text-lg text-white/80 max-w-2xl">
+              <p className="text-lg text-white/80 max-w-2xl animate-fade-in-up [animation-delay:400ms] opacity-0">
                 Passionate about developing intelligent systems, web applications, and AI-driven solutions.
-                Currently pursuing B.Tech at Bharat Institute of Engineering and Technology.
+                B.Tech graduate from Bharat Institute of Engineering and Technology.
               </p>
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fade-in-up [animation-delay:600ms] opacity-0">
               <Button
                 size="lg"
-                className="bg-white text-primary hover:bg-white/90 shadow-medium"
-                onClick={() => scrollToSection('projects')}
+                className="bg-white text-primary hover:bg-white/90 shadow-medium transition-all hover:scale-105"
+                asChild
               >
-                View My Projects
+                <a href="/ARAVIND_ESLAVATH_RESUME.pdf" target="_blank" rel="noopener noreferrer">
+                  <Eye className="mr-2 h-5 w-5" />
+                  View Full Resume
+                </a>
               </Button>
               <Button
                 size="lg"
-                className="bg-white text-primary hover:bg-white/90 shadow-medium"
+                className="bg-white text-primary hover:bg-white/90 shadow-medium transition-all hover:scale-105"
                 asChild
               >
                 <a href="/ARAVIND_ESLAVATH_RESUME.pdf" download="ARAVIND_ESLAVATH_RESUME.pdf">
@@ -58,19 +61,19 @@ const HeroSection = () => {
             </div>
 
             {/* Social Links */}
-            <div className="flex gap-4 justify-center lg:justify-start">
+            <div className="flex gap-4 justify-center lg:justify-start animate-fade-in-up [animation-delay:800ms] opacity-0">
               <a href="https://github.com/eslavatharavind" target="_blank" rel="noopener noreferrer">
-                <Button variant="ghost" size="sm" className="text-white hover:text-primary-glow hover:bg-white/10">
+                <Button variant="ghost" size="sm" className="text-white hover:text-primary-glow hover:bg-white/10 transition-all hover:scale-110">
                   <Github className="h-5 w-5" />
                 </Button>
               </a>
-              <a href="https://www.linkedin.com/in/eslavath-aravind-9aa64a30a" target="_blank" rel="noopener noreferrer">
-                <Button variant="ghost" size="sm" className="text-white hover:text-primary-glow hover:bg-white/10">
+              <a href="https://www.linkedin.com/in/aravind-eslavath-9aa64a30a" target="_blank" rel="noopener noreferrer">
+                <Button variant="ghost" size="sm" className="text-white hover:text-primary-glow hover:bg-white/10 transition-all hover:scale-110">
                   <Linkedin className="h-5 w-5" />
                 </Button>
               </a>
               <a href="mailto:aravindeslavath04@gmail.com">
-                <Button variant="ghost" size="sm" className="text-white hover:text-primary-glow hover:bg-white/10">
+                <Button variant="ghost" size="sm" className="text-white hover:text-primary-glow hover:bg-white/10 transition-all hover:scale-110">
                   <Mail className="h-5 w-5" />
                 </Button>
               </a>
@@ -78,17 +81,17 @@ const HeroSection = () => {
           </div>
 
           {/* Profile Image */}
-          <div className="flex justify-center lg:justify-end">
-            <div className="relative">
-              <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-2xl overflow-hidden shadow-strong bg-gradient-to-br from-white/20 to-white/10 backdrop-blur-sm border border-white/20">
+          <div className="flex justify-center lg:justify-end animate-fade-in-up [animation-delay:400ms] opacity-0">
+            <div className="relative group">
+              <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-2xl overflow-hidden shadow-strong bg-gradient-to-br from-white/20 to-white/10 backdrop-blur-sm border border-white/20 transition-transform duration-500 group-hover:scale-[1.02] group-hover:rotate-1">
                 <img
                   src="/chinnu/image.jpg"
                   alt="Eslavath Aravind"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
               </div>
-              <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-primary-glow/20 rounded-full blur-xl"></div>
-              <div className="absolute -top-4 -left-4 w-16 h-16 bg-white/20 rounded-full blur-lg"></div>
+              <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-primary-glow/20 rounded-full blur-xl animate-pulse"></div>
+              <div className="absolute -top-4 -left-4 w-16 h-16 bg-white/20 rounded-full blur-lg animate-pulse [animation-delay:1s]"></div>
             </div>
           </div>
         </div>
