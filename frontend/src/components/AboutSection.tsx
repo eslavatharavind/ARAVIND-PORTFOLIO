@@ -15,8 +15,8 @@ const AboutSection = () => {
           </div>
 
           {/* About Content */}
-          <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
-            <div className="space-y-6">
+          <div className="flex flex-col items-center text-center space-y-12">
+            <div className="space-y-6 max-w-3xl">
               <h3 className="text-2xl font-semibold text-foreground">
                 Passionate Computer Science Student
               </h3>
@@ -31,7 +31,7 @@ const AboutSection = () => {
               </div>
             </div>
 
-            <div className="relative">
+            <div className="relative w-full max-w-2xl">
               <Card className="bg-gradient-card border-0 shadow-medium hover:shadow-strong transition-all duration-300">
                 <CardContent className="p-8">
                   <h4 className="text-xl font-semibold text-foreground mb-6">

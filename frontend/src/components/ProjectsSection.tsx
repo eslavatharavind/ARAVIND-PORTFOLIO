@@ -91,15 +91,15 @@ const ProjectsSection = () => {
                   className="shadow-medium hover:shadow-strong transition-all duration-300 border-border hover:border-primary/20 overflow-hidden"
                 >
                   <div className="grid lg:grid-cols-2 gap-0">
-                    <div className="p-8 flex flex-col justify-between">
+                    <div className="p-8 flex flex-col items-center text-center justify-between">
                       <div>
-                        <CardHeader className="p-0 mb-6">
-                          <div className="flex items-start justify-between mb-4">
+                        <CardHeader className="p-0 mb-6 flex flex-col items-center">
+                          <div className="flex items-start justify-center mb-4">
                             <div className="flex items-center gap-3">
                               <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center">
                                 <IconComponent className="h-6 w-6 text-primary-foreground" />
                               </div>
-                              <div>
+                              <div className="text-left">
                                 <Badge
                                   variant="secondary"
                                   className={`mb-2 ${project.status === 'Completed'
@@ -120,14 +120,14 @@ const ProjectsSection = () => {
                             {project.title}
                           </CardTitle>
 
-                          <p className="text-muted-foreground leading-relaxed">
+                          <p className="text-muted-foreground leading-relaxed max-w-xl mx-auto">
                             {project.description}
                           </p>
                         </CardHeader>
 
                         <div className="mb-6">
                           <h4 className="font-semibold text-foreground mb-3">Technologies Used</h4>
-                          <div className="flex flex-wrap gap-2">
+                          <div className="flex flex-wrap gap-2 justify-center">
                             {project.technologies.map((tech, techIndex) => (
                               <Badge
                                 key={techIndex}
@@ -141,7 +141,7 @@ const ProjectsSection = () => {
                         </div>
                       </div>
 
-                      <div className="flex gap-3 mt-4">
+                      <div className="flex gap-3 mt-4 justify-center">
                         {project.codeUrl && (
                           <a href={project.codeUrl} target="_blank" rel="noopener noreferrer">
                             <Button size="sm" className="shadow-soft px-6">

@@ -19,7 +19,7 @@ const HeroSection = () => {
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
-          <div className="text-center lg:text-left space-y-8">
+          <div className="text-center space-y-8 max-w-3xl mx-auto">
             <div className="space-y-4">
               <h1 className="text-4xl lg:text-6xl font-bold text-white leading-tight animate-fade-in-up opacity-0">
                 Hi, I'm{' '}
@@ -30,14 +30,14 @@ const HeroSection = () => {
               <p className="text-xl lg:text-2xl text-white/90 font-medium animate-fade-in-up [animation-delay:200ms] opacity-0">
                 AI Full Stack Developer /AI/ML Engineer & CSE Student
               </p>
-              <p className="text-lg text-white/80 max-w-2xl animate-fade-in-up [animation-delay:400ms] opacity-0">
+              <p className="text-lg text-white/80 max-w-2xl mx-auto animate-fade-in-up [animation-delay:400ms] opacity-0">
                 Passionate about developing intelligent systems, web applications, and AI-driven solutions.
                 B.Tech graduate from Bharat Institute of Engineering and Technology.
               </p>
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fade-in-up [animation-delay:600ms] opacity-0">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up [animation-delay:600ms] opacity-0">
               <Button
                 size="lg"
                 className="bg-white text-primary hover:bg-white/90 shadow-medium transition-all hover:scale-105"
@@ -61,7 +61,7 @@ const HeroSection = () => {
             </div>
 
             {/* Social Links */}
-            <div className="flex gap-4 justify-center lg:justify-start animate-fade-in-up [animation-delay:800ms] opacity-0">
+            <div className="flex gap-4 justify-center animate-fade-in-up [animation-delay:800ms] opacity-0">
               <a href="https://github.com/eslavatharavind" target="_blank" rel="noopener noreferrer">
                 <Button variant="ghost" size="sm" className="text-white hover:text-primary-glow hover:bg-white/10 transition-all hover:scale-110">
                   <Github className="h-5 w-5" />
@@ -81,7 +81,7 @@ const HeroSection = () => {
           </div>
 
           {/* Profile Image */}
-          <div className="flex justify-center lg:justify-end animate-fade-in-up [animation-delay:400ms] opacity-0">
+          <div className="flex justify-center animate-fade-in-up [animation-delay:400ms] opacity-0">
             <div className="relative group">
               <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-2xl overflow-hidden shadow-strong bg-gradient-to-br from-white/20 to-white/10 backdrop-blur-sm border border-white/20 transition-transform duration-500 group-hover:scale-[1.02] group-hover:rotate-1">
                 <img
